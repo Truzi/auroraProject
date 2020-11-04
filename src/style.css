@@ -1,5 +1,138 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+
+/* Min 320px */
+@media (min-width: 320px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .container-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: 400;
+    font-size: .7em;
+    padding: 10px 20px;
+  }
+    
+  .container-item--underlined {
+    border-bottom: 1px solid #d3d3d3;
+  }
+  
+  .list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .list-item {
+    margin: 5px 10px 0px 0px;
+  }
+  
+  .list-item--left-border {
+    cursor: pointer;
+  }
+
+  .list-item-icon {
+    padding-right: 5px;
+  }
+
+  .logo {
+    width: 30%;
+    height: auto;
+  }
+
+  .search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    padding-top: 5px;
+  }
+
+  div.search-box {
+    border-bottom: 1px solid #d3d3d3;
+  }
+
+  .search-box-field:enabled,
+  .search-box-button:enabled {
+    outline: none;
+  }
+
+  .search-box-field {
+    font-weight: 300;
+  }
+
+  .search-box-button {
+    cursor: pointer;
+  }
+
+  .basket::before {
+    background-image: url('./images/basket.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 30px;
+    content: "";
+    position: relative;
+    top: 20px;
+  }
+  .basket {
+    cursor: pointer;
+    font-weight: 700;
+  }
+
+  .list-item-link {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .list-item-link:hover {
+    color: #ecc7d0;
+    transition: .5s;
+  }
+
+  .menu > .list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Min 768px */
+@media (min-width: 768px) {
+
+}
+
+/* Min 1024px */
+@media (min-width: 1024px) {
+  .container {
+    height: 240px; 
+  }
+    
+  .list-item {
+    margin: 5px 10px 0px 0px;
+  }
+    
+  .list {
+    flex-direction: row;
+  }
+  
 }
