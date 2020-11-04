@@ -46,11 +46,11 @@
   }
 
   .list-item-icon {
-    padding-right: 5px;
+    margin-right: 10px;
   }
 
   .logo {
-    width: 20%;
+    max-width: 15%;
     /* height: 100%; */
   }
 
@@ -66,11 +66,11 @@
     justify-content: space-around;
     border: none;
     background-color: transparent;
-    padding-top: 5px;
+    padding: 5px;
   }
 
   div.search-box {
-    border-bottom: 1px solid #d3d3d3;
+    border-bottom: 2px solid #808080;
   }
 
   .search-box-field:enabled,
@@ -121,6 +121,7 @@
     overflow: hidden;
     padding-left: 10px;
     justify-content: flex-start;
+    border-bottom: 1px solid #d3d3d3;
   }
 
   .menu--opened {
@@ -152,6 +153,10 @@
 
 /* Medium screen */
 @media (min-width: 768px) {
+  .container-item:first-child{
+    padding: 0;
+  }
+
   .list {
     flex-direction: row;
   }
@@ -163,6 +168,9 @@
 
   .list-item--left-border {
     border-left: 1px solid #d3d3d3;
+    margin-top: 0;
+    margin-right: 20px;
+    height: 45px;
   }
 
   .search {
@@ -172,7 +180,8 @@
   }
   
   .logo {
-    width: 15%;
+    padding-top: 2vh;
+    max-width: 10%;
   }
 
   .search-box-field {
@@ -211,7 +220,10 @@
     overflow: visible;
     height: 40%;
     padding: 0;
+    text-align: center;
     justify-content: center;
+    width: 70%;
+    margin-left: 15%;
   }
 
   .menu > .list {
@@ -228,14 +240,16 @@
 }
 
 /* Large screens */
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .list-item {
     font-size: 1.2em;
   }
 
   .search {
-    width: 60%;
-    margin-left: 20%;
+    margin-top: 1%;
+    width: 70%;
+    margin-left: 15%;
+    justify-content: space-between;
   }
 
   .logo {
@@ -248,7 +262,7 @@
 
   .search-box-button img {
     width: 15px;
-    padding-bottom: 5px;
+
   }
 
   .basket {
@@ -256,22 +270,34 @@
   }
 
   .basket-icon {
-    width: 30px;
-    height: 30px;
-    background-size: 30px 30px;
+    width: 32px;
+    height: 35px;
+    background-size: 32px 35px;
+    margin-right: .5em;
   }
 
   .basket-link {
     font-size: 1.4em;
   }
 
+  .menu {
+    width: 70%;
+    margin-left: 15%;
+  }
+
   .menu > .list {
     padding-bottom: 2em;
+    width: 100%;
+    justify-content: space-around;
   }
 
   .menu > .list > .list-item {
-    padding-left: 3em;
+    /* padding-left: .2em; */
+    text-align: center;
+    justify-content: center;
+    padding: 0 1vw;
     font-size: 1.1em;
+    font-weight: 700;
   }
 
   .menu > .list > .list-item:first-child {
