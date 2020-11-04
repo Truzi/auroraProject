@@ -6,6 +6,7 @@
   <title>Aurora Project</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="script.js"></script>
 </head>
 <body>
   <header class="container">
@@ -21,11 +22,13 @@
     </div>
     <div class="container-item search">
       <img class="logo" src="./images/logo.png" alt="logo">
-        <div class="search-box">
-          <input class="search-box search-box-field" type="text" placeholder="Co chcesz kupić?">
-          <button class="search-box search-box-button"><img src="./images/search.png" alt="search"></button>
-        </div>
-        <p class="basket">Twój koszyk</p>
+      <div class="search-box">
+        <input class="search-box search-box-field" type="text" placeholder="Co chcesz kupić?">
+        <button class="search-box search-box-button"><img src="./images/search.png" alt="search"></button>
+      </div>
+      <a class="basket-icon"></a>
+      <p class="basket">Twój koszyk</p>
+      <a class="burger-nav" onClick="toggle()"></a>
     </div>
     <nav class="container-item container-item--underlined menu">
       <ul class="list">
