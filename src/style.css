@@ -31,12 +31,10 @@
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: flex-start;
   }
   
   .list-item {
-    margin: 5px 10px 0px 0px;
     display: flex;
     align-items: center;
   }
@@ -63,10 +61,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     border: none;
     background-color: transparent;
     padding: 5px;
+    width: 35%;
   }
 
   div.search-box {
@@ -169,7 +168,7 @@
   .list-item--left-border {
     border-left: 1px solid #d3d3d3;
     margin-top: 0;
-    margin-right: 20px;
+    padding-right: 20px;
     height: 45px;
   }
 
@@ -254,7 +253,10 @@
 
   .logo {
     padding-top: 1em;
+    max-width: 12%;
   }
+
+  .search-box
 
   .search-box-button {
     width: 20px;
